@@ -1,0 +1,76 @@
+<html>  
+   <body>  
+       <h3>Predict Sold Price of a House</h3>
+      <table border = 0>  
+         <form action = "/result" method = "POST">
+            <tr>  
+            <td>List Price</td><td><input type = "text" name = "listprice" /></td>
+            </tr>
+            <tr>  
+            <td>Bedrooms </td><td><input type = "text" name = "bedrooms" /></td>
+            </tr>
+            <tr> 
+            <td>Washrooms </td><td><input type = "text" name = "washrooms" /></td>
+            </tr>
+            <tr>    
+            <td>Additional Rooms </td><td><input type ="text" name = "additional" /></td>
+            </tr>
+            <tr>  
+            <td>Kitchens </td><td><input type ="text" name = "kitchens" /></td>
+            </tr> 
+            <tr> 
+            <td>Style </td><td>
+               <select name="style" id="style">
+                  <option value="1 1/2 Stor">1 1/2 Stor</a>
+                  <option value="2-Storey">2-Storey</a>
+                  <option value="2 1/2 Stor">2 1/2 Stor</a>
+                  <option value="3-Storey">3-Storey</a>
+                  <option value="Backsplit">Backsplit</a>
+                  <option value="Bungalow">Bungalow</a>
+                  <option value="Bungaloft">Bungaloft</a>
+                  <option value="Bungaloft">Bungalow-R</a>
+                  <option value="Sidesplit">Sidesplit</a>
+                  <option value="Sidesplit">Other</a>
+            </select></td>
+            </tr>
+            <tr>    
+            <td>Type </td><td>
+               <select name="type" id="type">
+                  <option value="Att/Row/Tw">Att/Row/Tw</a>
+                  <option value="Semi-Detac">Semi-Detached</a>
+                  <option value="Detached">Detached</a>
+                  <option value="Link">Link</a>
+                  <option value="Vacant Lan">Vacant Land</a>
+               </select>
+            </td>
+            </tr>
+            <tr>     
+            <td>Family Room </td><td>
+               <input type="radio" id="yes" name="family" value="Y">
+               <label for="yes">Y</label>
+               <input type="radio" id="no" name="family" value="N">
+               <label for="no">N</label>
+            </td>
+            </tr>
+            <tr>  
+            <td>Garage Type</td><td>
+               <select name="garage" id="garage">
+                  <option value="Attach">Attach</a>
+                  <option value="Built-">Built-</a>
+                  <option value="Carpor">Carpor</a>
+                  <option value="Detach">Detach</a>
+                  <option value="None">None</a>
+                  <option value="Other">Other</a>
+               </select></td>
+            </tr>
+            <tr>  
+            <td>Contract Date </td><td><input type ="text" name = "cdate" /></td>
+            </tr> 
+            <tr></tr> 
+            <tr> 
+            <td align="right"><input type = "submit" value = "Submit" /></td>
+            <tr> 
+         </table>  
+      </form>  
+   </body>  
+</html>  
