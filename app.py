@@ -1,12 +1,28 @@
 from flask import Flask
-from flask import request, render_template
+from flask import request, render_template, url_for
 import ml_model
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/mlinput')
 def student():
-   return render_template('index.html')
+   return render_template('mlinput.html')
+
+@app.route('/dashboard3')
+def dashboard3():
+   return render_template('dashboard3.html')
+
+@app.route('/dashboard2')
+def dashboard2():
+   return render_template('dashboard2.html')
+
+@app.route('/dashboard1')
+def dashboard1():
+   return render_template('dashboard1.html')
+
+@app.route('/')
+def home():
+   return render_template('home.html')
   
 @app.route('/result', methods = ['POST', 'GET'])
 def result():

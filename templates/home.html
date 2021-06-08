@@ -23,7 +23,7 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Now UI Dashboard by Creative Tim
+    Real Estate Analysis for GTA
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -46,12 +46,12 @@
     -->
       <div class="logo">
         <a href="#" class="simple-text logo-normal">
-          <b>REAL ESTATE ANALYSIS</b>
+          <b>Real Estate Analysis</b>
         </a>
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
-          <li>
+          <li class="active ">
             <a href="/">
               <i class="now-ui-icons design_app"></i>
               <p>Home</p>
@@ -75,7 +75,7 @@
               <p>Dashboard 3</p>
             </a>
           </li>
-          <li class="active ">
+          <li>
             <a href="/mlinput">
               <i class="now-ui-icons users_single-02"></i>
               <p>ML Input </p>
@@ -96,7 +96,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Machine Learning Model</a>
+            <a class="navbar-brand" href="#pablo">Project Home</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -149,54 +149,117 @@
         </div>
       </nav>
       <!-- End Navbar -->
-      <div class="panel-header panel-header-sm">
+       <!-- content of the page STARTS here-->
+       <div class="panel-header panel-header-sm">
       </div>
       <div class="content">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="card ">
+        <div class="row" >
+          <div class="col-12">
+            <div class="card card-chart">
               <div class="card-header ">
-                <h4>Results</h4>
+                <h1>Real Estate Analysis in GTA</h1>
               </div>
-              <div class="card-body ">
-                <p><strong>Given below are the results based on inputs:</strong></p>  
-                    <table border = 0>  
-                            <tr>  
-                            <td>The Predicted Sold Price is: </td>
-                            <td><b>${{soldprice}}</b></td>    
-                            </tr>
-                            <tr>  
-                            <td>The Difference in Price (SP-LP) is: &nbsp;</td>
-                            <td><b>${{difference}}</b></td>    
-                            </tr>
-                    </table>
-
+            </div>
+          </div>
+        </div> 
+        <div class="row" >
+          <div class="col-12">
+            <div class="card card-chart">
+              <div class="card-header ">
+                <h2>Project Overview</h2>
+                <p>
+                  Our chosen project examines house prices in the Greater Toronto Area in the years 2020 and 2021 
+                  We are going to be using data from the 2020 -2021 Toronto Real Estate sold house listings. We want to answer questions whether the sold listings could predict future house prices based on the house's features (number of washrooms, bedrooms, etc), location.
+                  Here are the steps that will allow us to achieve our goal:
+                  <ol>
+                    <li>Create a database using SQLite.</li>
+                    <li>Run various machine learning models to predict review scoring and compare which machine learning model is most accurate.</li>
+                    <li>Create a fully functioning and interactive dashboard using tableau.</li>
+                    <li>Create and host a Web application on Github to showcase results. </li> 
+                  </ol>
+                  Lastly, based on previous class deliverables and group research done by the project team, the dataset presents the best opportunity to showcase skills associated with ETL (Extract, Transfer, and Load), machine learning models, and data visualization.
+                </p>
               </div>
             </div>
           </div>
         </div>
+        <div class="row" >
+          <div class="col-12">
+            <div class="card card-chart">
+              <div class="card-header ">
+                <h3>Data Source Description</h3>
+                <p>The data are pdf files which show 26 rows. The pdf files are converted into Excel files, cleaned up then saved as csv.
+                  Multiple Linear Regression model will be used to predict the future price of the house based on the house features listed above. We are using SQLite for the Database.</p>
+                <h4>Data content</h4>
+                <p>The CSV file contains 26 fields. The description of each field is as below:</p>
+                <ul>
+                  <li>"#" - The row number.</li>
+                  <li>LSC - The listing displays its contract status at the Last Status Change (LSC) field</li>
+                  <li>EC - Describes whether the property has received the Encumbrance Certificate: certificate of assurance that the property is free from any legal or monetary liability</li>
+                  <li>St# - The Street number</li>
+                  <li>Street name - The name of the street.</li>
+                  <li>Abbr - Abbreviation of Street type.</li>
+                  <li>Dir - Direction (North, South, East and West).</li>
+                  <li>Municipality - The name of the city in which the property resides in.</li>
+                  <li>Community - The name of the locality on which the property resides within a given municipality.</li>
+                  <li>List Price - The price of the property at the time of listing.</li>
+                  <li>Sold Price - The price that the property was sold for.</li>
+                  <li>Type - Describes the type of the property (semi-detached, detached or attached).</li>
+                  <li>Style - Number of storeys in the listed property contains.</li>
+                  <li>Br - The number of bedrooms in the listed property contains.</li>
+                  <li>Additional- Any other additional rooms in the listed property.</li>
+                  <li>Wr - The number of washrooms in the listed property.</li>
+                  <li>Fam - Indicates if there is a family room in the listed property.</li>
+                  <li>Kit - Number of kitchens in the listed property.</li>
+                  <li>Garage type - The type of the garage.</li>
+                  <li>A/C - The type of A/C (Centralized or non-centralized).</li>
+                  <li>Heat - The type of Furnace.</li>
+                  <li>Contract Date - The date the contract was signed.</li>
+                  <li>Sold Date - The date the property was sold on.</li>
+                  <li>List Brokerage - Name of brokerage that the listed property was under.</li>
+                  <li>Co op Brokerage - Buyer's brokerage.</li>
+                  <li>MLS # - A unique number assigned to a real estate listing.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row" >
+          <div class="col-12">
+            <div class="card card-chart">
+              <div class="card-header ">
+                <h3>Questions to Answer:</h3>
+                <ul>
+                  <li>Do unique features of the house (Washroom, bedroom, area, semidetached, attached) play an integral role with determining the sold price?</li>
+                  <li>Does the location, type, style, listing date and listing price play a factor of the sold price?</li>
+                  <li>When was it listed and how fast was it sold?</li>
+                  <li>Does location dictate how long a house is listed in the market and if there are any patterns?</li>
+                  <li>Does the location showcase a pattern in the over asking prices?</li>
+                  <li>What will be the Sold Price of a house based on different features mentioned in the dataset?</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div> 
+        <div class="row" >
+          <div class="col-12">
+            <div class="card card-chart">
+              <div class="card-header ">
+                  <h3>Machine Learning</h3>
+                <ul>
+                  <p>We have created machine learning model to predict "Sold Price" of a house based on style, type, bedrooms, washrooms, and list price of a house. This can help a prospective buyer to decide how much to bid for the house. We have used Multiple Linear Regression model for this purpose.</p>
+                  <p>Since we are trying to predict a continuous numerical output (i.e. “Sold Price” of homes) based on a number of input variables, we have selected <b><i>Multiple Linear Regression</i></b> as a machine learning model. It will take an input of a set of factors (or test dataset), learn patterns and find relationships between datapoints to predict the value of dependent variable. The 10 columns mentioned above are taken as feature or input variables.</p>
+                  <p>We also tested <b><i>XGBRegressor</i></b> from the XGBoost library and <b><i>Support Vector Regression</i></b> (SVM) from sklearn as alternative machine learning models. However, the perfromance was dropped significantly. Therefore, Linear Regression regression was chosen as best option out of the tested models.</p>
+                  <a href="https://github.com/AndrewTymkiv/real_estate_analysis" target="_blank">Visit Github Link for Real Estate Analysis in GTA Region</a> 
+                </ul>
+              </div>
+              </div>
+            </div>
+          </div> 
       </div>
+        <!-- Footer Start -->
       <footer class="footer">
         <div class=" container-fluid ">
-          <nav>
-            <ul>
-              <li>
-                <a href="https://www.creative-tim.com">
-                  Creative Tim
-                </a>
-              </li>
-              <li>
-                <a href="http://presentation.creative-tim.com">
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a href="http://blog.creative-tim.com">
-                  Blog
-                </a>
-              </li>
-            </ul>
-          </nav>
           <div class="copyright" id="copyright">
             &copy; <script>
               document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))

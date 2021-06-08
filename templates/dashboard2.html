@@ -23,7 +23,7 @@
   <link rel="icon" type="image/png" href="../assets/img/favicon.png">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <title>
-    Now UI Dashboard by Creative Tim
+    Dashboard 2 - Real Estate Analysis
   </title>
   <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
   <!--     Fonts and icons     -->
@@ -46,13 +46,13 @@
     -->
       <div class="logo">
         <a href="#" class="simple-text logo-normal">
-          <b>REAL ESTATE ANALYSIS</b>
+          <b>Real Estate Analysis</b>
         </a>
       </div>
       <div class="sidebar-wrapper" id="sidebar-wrapper">
         <ul class="nav">
           <li>
-            <a href="/">
+            <a href="./home.html">
               <i class="now-ui-icons design_app"></i>
               <p>Home</p>
             </a>
@@ -63,7 +63,7 @@
               <p>Dashboard 1</p>
             </a>
           </li>
-          <li>
+          <li class="active ">
             <a href="/dashboard2">
               <i class="now-ui-icons location_map-big"></i>
               <p>Dashboard 2</p>
@@ -75,7 +75,7 @@
               <p>Dashboard 3</p>
             </a>
           </li>
-          <li class="active ">
+          <li>
             <a href="/mlinput">
               <i class="now-ui-icons users_single-02"></i>
               <p>ML Input </p>
@@ -96,7 +96,7 @@
                 <span class="navbar-toggler-bar bar3"></span>
               </button>
             </div>
-            <a class="navbar-brand" href="#pablo">Machine Learning Model</a>
+            <a class="navbar-brand" href="#pablo">Dashboards</a>
           </div>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-bar navbar-kebab"></span>
@@ -155,22 +155,13 @@
         <div class="row">
           <div class="col-md-12">
             <div class="card ">
-              <div class="card-header ">
-                <h4>Results</h4>
-              </div>
-              <div class="card-body ">
-                <p><strong>Given below are the results based on inputs:</strong></p>  
-                    <table border = 0>  
-                            <tr>  
-                            <td>The Predicted Sold Price is: </td>
-                            <td><b>${{soldprice}}</b></td>    
-                            </tr>
-                            <tr>  
-                            <td>The Difference in Price (SP-LP) is: &nbsp;</td>
-                            <td><b>${{difference}}</b></td>    
-                            </tr>
-                    </table>
 
+                <div class="card-header ">
+                  Dashboard 2
+                </div>
+                <div class="card-body ">
+                  <div class='tableauPlaceholder' id='viz1622937967654' style='position: relative'><noscript><a href='#'><img alt='DashboardAvgDiff ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;Final1_16229308570450&#47;DashboardAvgDiff&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Final1_16229308570450&#47;DashboardAvgDiff' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Fi&#47;Final1_16229308570450&#47;DashboardAvgDiff&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1622937967654');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1127px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+                </div>
               </div>
             </div>
           </div>
