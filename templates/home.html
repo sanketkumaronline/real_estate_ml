@@ -13,6 +13,8 @@
 
 * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
 
+* Edited and customized by Sanket Kumar (https://github.com/sanketkumaronline/)
+
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -116,7 +118,7 @@
             </form>
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#pablo">
+                <a class="nav-link" href="/">
                   <i class="now-ui-icons media-2_sound-wave"></i>
                   <p>
                     <span class="d-lg-none d-md-block">Stats</span>
@@ -131,13 +133,13 @@
                   </p>
                 </a>
                 <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <a class="dropdown-item" href="#">Something else here</a>
+                  <a class="dropdown-item" href="/#data">Data Source</a>
+                  <a class="dropdown-item" href="/#questions">Questions Answered</a>
+                  <a class="dropdown-item" href="/#ml">Machine Learning</a>
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#pablo">
+                <a class="nav-link" href="#team">
                   <i class="now-ui-icons users_single-02"></i>
                   <p>
                     <span class="d-lg-none d-md-block">Account</span>
@@ -187,8 +189,8 @@
           <div class="col-12">
             <div class="card card-chart">
               <div class="card-header ">
-                <h3>Data Source Description</h3>
-                <p>The data are pdf files which show 26 rows. The pdf files are converted into Excel files, cleaned up then saved as csv.
+                <h3 id="data">Data Source Description</h3>
+                <p>We were able to gather our data from a <a href="https://soldbysingh.ca/">licensed realtor</a> who has access to the most recent listing information about house sales in Brampton for last six months. The data are pdf files which show 26 rows. The pdf files are converted into Excel files, cleaned up then saved as csv.
                   Multiple Linear Regression model will be used to predict the future price of the house based on the house features listed above. We are using SQLite for the Database.</p>
                 <h4>Data content</h4>
                 <p>The CSV file contains 26 fields. The description of each field is as below:</p>
@@ -228,7 +230,7 @@
           <div class="col-12">
             <div class="card card-chart">
               <div class="card-header ">
-                <h3>Questions to Answer:</h3>
+                <h3 id="questions">Questions to Answer:</h3>
                 <ul>
                   <li>Do unique features of the house (Washroom, bedroom, area, semidetached, attached) play an integral role with determining the sold price?</li>
                   <li>Does the location, type, style, listing date and listing price play a factor of the sold price?</li>
@@ -245,12 +247,29 @@
           <div class="col-12">
             <div class="card card-chart">
               <div class="card-header ">
-                  <h3>Machine Learning</h3>
+                  <h3 id="ml">Machine Learning</h3>
                 <ul>
                   <p>We have created machine learning model to predict "Sold Price" of a house based on style, type, bedrooms, washrooms, and list price of a house. This can help a prospective buyer to decide how much to bid for the house. We have used Multiple Linear Regression model for this purpose.</p>
                   <p>Since we are trying to predict a continuous numerical output (i.e. “Sold Price” of homes) based on a number of input variables, we have selected <b><i>Multiple Linear Regression</i></b> as a machine learning model. It will take an input of a set of factors (or test dataset), learn patterns and find relationships between datapoints to predict the value of dependent variable. The 10 columns mentioned on ML Input page are taken as feature or input variables.</p>
                   <p>We also tested <b><i>XGBRegressor</i></b> from the XGBoost library and <b><i>Support Vector Regression</i></b> (SVM) from sklearn as alternative machine learning models. However, the perfromance was dropped significantly. Therefore, Linear Regression regression was chosen as best option out of the tested models.</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+          <div class="row" >
+            <div class="col-12">
+              <div class="card card-chart">
+                <div class="card-header ">       
                   <a href="https://github.com/AndrewTymkiv/real_estate_analysis" target="_blank">Visit Github Link for Real Estate Analysis in GTA Region</a> 
+                  <br><br>
+                  <b id="team">Team:</b>
+                  <ul>
+                    <li>Sanket Kumar : <a href="https://github.com/sanketkumaronline" target="_blank">https://github.com/sanketkumaronline</a></li>
+                    <li>Agnieszka Blanchard : <a href="https://github.com/agnieszka-web" target="_blank">https://github.com/agnieszka-web</a></li>
+                    <li>Andrew Tymkiv : <a href="https://github.com/AndrewTymkiv" target="_blank">https://github.com/AndrewTymkiv</a></li>
+                    <li>Yashitha Bhuvanagiri : <a href="https://github.com/yashithab" target="_blank">https://github.com/yashithab</a></li>
+                  </ul>
+                
                 </ul>
               </div>
               </div>
@@ -258,7 +277,7 @@
           </div> 
       </div>
         <!-- Footer Start -->
-      <footer class="footer">
+     <!-- <footer class="footer">
         <div class=" container-fluid ">
           <div class="copyright" id="copyright">
             &copy; <script>
@@ -268,7 +287,7 @@
         </div>
       </footer>
     </div>
-  </div>
+  </div> -->
   <!--   Core JS Files   -->
   <script src="{{url_for('static',filename='js/core/jquery.min.js')}}"></script>
   <script src="{{url_for('static',filename='js/core/popper.min.js')}}"></script>
